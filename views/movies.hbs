@@ -1,7 +1,7 @@
 <div class="movieContainer">
 {{#each movies}}
       <div class='movieList'>
-        <a href="/seeMore">
+        <a href="/movie/{{this.id}}">
         <img src="{{this.image}}" alt="{{this.name}}">
         </a>
         <p>{{this.title}}</p>

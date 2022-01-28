@@ -1,0 +1,16 @@
+<div class="movieContainer">
+{{#each movies}}
+      <div class='movieList'>
+        <a href="/seeMore">
+        <img src="{{this.image}}" alt="{{this.name}}">
+        </a>
+        <p>{{this.title}}</p>
+        <br>
+        
+        <br>
+          <a href="/movie/{{this.id}}">See More</a>
+      </div>
+    {{else}} 
+      <span>there are no movies to show</span>
+    {{/each}}
+</div>
